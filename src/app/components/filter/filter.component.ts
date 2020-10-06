@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SpaceXService } from 'src/app/services/spacex.service';
-import { IFilter } from 'src/app/shared/madel';
+import { IFilter } from 'src/app/@type/madel';
 
 
 

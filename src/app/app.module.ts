@@ -6,13 +6,13 @@ import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilterComponent } from './components/filter/filter.component';
 import { CardsComponent } from './containers/cards/cards.component';
-import { ProgramComponent } from './components/program/program.component';
+import { CardComponent } from './components/card/card.component';
 @NgModule({
   declarations: [
     AppComponent,
     FilterComponent,
     CardsComponent,
-    ProgramComponent
+    CardComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),

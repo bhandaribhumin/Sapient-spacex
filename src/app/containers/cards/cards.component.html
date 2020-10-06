@@ -10,7 +10,7 @@
   *ngIf="!(loading$ | async) && (programs$ | async) as programs"
   class="grid-cards"
 >
-  <div *ngFor="let program of programs" class="program-card">
-    <app-program [program]="program"></app-program>
+  <div *ngFor="let program of programs" class="app-card">
+    <app-card [cardItem]="program"></app-card>
   </div>
 </div>

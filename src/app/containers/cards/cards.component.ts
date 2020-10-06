@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { SpaceXService } from 'src/app/services/spacex.service';
-import { IProgram } from 'src/app/shared/madel';
+import { IProgram } from 'src/app/@type/madel';
 
 @Component({
   selector: 'app-cards',
