@@ -1,0 +1,16 @@
+<div class="message" *ngIf="loading$ | async">
+  <div>
+    <h1 class="loading">
+      We are getting Data from Spacex . . .
+    </h1>
+  </div>
+</div>
+
+<div
+  *ngIf="!(loading$ | async) && (programs$ | async) as programs"
+  class="grid-cards"
+>
+  <div *ngFor="let program of programs" class="program-card">
+    <app-program [program]="program"></app-program>
+  </div>
+</div>

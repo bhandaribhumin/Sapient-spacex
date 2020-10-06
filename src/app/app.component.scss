@@ -1,0 +1,101 @@
+@import "./../assets/Breakpoints.scss";
+
+  
+  
+
+.section {
+    margin-top: 60px;
+    margin-bottom: 120px;
+
+}
+
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+ 
+}
+.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 60px;
+}
+.card-wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border-radius: 10px;
+    background-color: #e8edf4;
+}
+.card-wrapper-title {
+    margin-bottom: 0px;
+    padding: 5px 36px 20px;
+    border-bottom: 2px solid #fff;
+    background-color: transparent;
+    color: #130b2c;
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+.card-list-item-border {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0px;
+    padding: 12px 36px;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 2px solid #fff;
+    color: #130b2c;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 600;
+}
+.grid-container {
+    display: -ms-grid;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-column-gap: 30px;
+
+    grid-template-columns: 1fr;
+    -ms-grid-rows: auto;
+    grid-template-rows: auto;
+    grid-row-gap: 24px;
+  }
+  @include breakpoint(tablet) {
+     .grid-container{
+      -ms-grid-columns: 1fr;
+      grid-row-gap: 36px;
+      grid-template-columns: 0.5fr 4fr;
+  } 
+  }
+
+//   @include breakpoint(dasktop) {
+ 
+//     .grid-sidebar-reversed {
+//       grid-row-gap: 5px;
+//       grid-column-gap: 25px;
+//     }
+//   }
+//   @media screen and (max-width: 991px){
+//     .grid-sidebar-reversed {
+//       -ms-grid-columns: 1fr;
+//       grid-row-gap: 36px;
+//       grid-template-columns: 1fr 2.3fr;
+//   }
+  //}

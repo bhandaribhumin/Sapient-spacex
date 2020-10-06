@@ -1,0 +1,10 @@
+@import "./../../../assets/Breakpoints.scss";
+@include between-breakpoints(600px,2184px) {
+  .grid-cards {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+
+
+
+

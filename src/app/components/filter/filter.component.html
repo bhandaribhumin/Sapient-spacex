@@ -1,0 +1,35 @@
+<div class="filter-wrapper">
+    <section id="year">
+        <h3>Launch Year</h3>
+        <span class="separator"></span>
+        <div class="grid-container">
+            <div class="grid-item year" *ngFor="let year of launchYears">
+                <button class="button" [ngClass]="(year == isActivYear) ? 'active' : ''" [value]="year" [id]="year" (click)="filterAsPerLaunchYear($event)">{{year}}</button>
+            </div>
+        </div>
+    </section>
+    <section id="launch">
+        <h3>Successful Launch</h3>
+        <span class="separator"></span>
+        <div class="grid-container">
+            <div class="grid-item">
+                <button class="button" [ngClass]="(isActivLaunch  === true) ? 'active' : ''" (click)="filterAsPerSuccessLaunch(true)">True</button>
+            </div>
+            <div class="grid-item">
+                <button class="button" [ngClass]="(isActivLaunch  === false) ? 'active' : ''" (click)="filterAsPerSuccessLaunch(false)">False</button>
+            </div>
+        </div>
+    </section>
+    <section id="land">
+        <h3>Successful Landing</h3>
+        <span class="separator"></span>
+        <div class="grid-container">
+            <div class="grid-item">
+                <button class="button" [ngClass]="(isActivLandLaunch === true) ? 'active' : ''" (click)="filterAsPerLandLaunch(true)">year</button>
+            </div>
+            <div class="grid-item">
+                <button class="button" [ngClass]="(isActivLandLaunch === false) ? 'active' : ''" (click)="filterAsPerLandLaunch(false)">False</button>
+            </div>
+        </div>
+    </section>
+</div>
