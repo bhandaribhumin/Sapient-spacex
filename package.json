@@ -11,8 +11,7 @@
     "dev:ssr": "ng run sapient-spacex:serve-ssr",
     "serve:ssr": "node dist/sapient-spacex/server/main.js",
     "build:ssr": "ng build --prod && ng run sapient-spacex:server:production",
-    "prerender": "ng run sapient-spacex:prerender",
-    "postinstall": "ng build --aot -prod"
+    "prerender": "ng run sapient-spacex:prerender"
   },
   "private": true,
   "dependencies": {
