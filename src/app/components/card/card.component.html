@@ -3,16 +3,16 @@
     <img [src]="cardItem.image" alt="" />
   </a>
   <div class="card-content">
-    <span class="title bold">
-      {{ cardItem.missionName }} #{{ cardItem.flightNumber }}
-    </span>
+    <a href="#" class="title">
+      <b> {{ cardItem.missionName }} #{{ cardItem.flightNumber }}</b>
+    </a>
     <div>
       <b> Mission IDs: </b> {{ cardItem.missionId?.length == 0 ? "N/A" : "" }}
       <span *ngFor="let id of cardItem.missionId">{{ id }}<br /></span>
     </div>
-    <div><b>Launch Year:</b> {{ cardItem.launchYear }}</div>
-    <div><b>Successful Launch:</b> {{ cardItem.launchSuccess }}</div>
-    <div><b>Successful Landing:</b> N/A</div>
+    <div><b>Launch Year:</b> <span>{{ cardItem.launchYear }}</span></div>
+    <div><b>Successful Launch:</b> <span>{{ cardItem.launchSuccess }}</span></div>
+    <div><b>Successful Landing:</b> <span>N/A</span></div>
   </div>
 </div>
 <!-- .card -->

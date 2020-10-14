@@ -1,7 +1,18 @@
-img{
-  width: 100%;
-}
-.card-content
-{
-  text-align: center;
+.card {
+  img {
+    width: 100%;
+    background: #efefef;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+    text-align: left;
+    div {
+      margin-top: 8px;
+      span{
+        color:#551a8b;
+      }
+    }
+  }
 }

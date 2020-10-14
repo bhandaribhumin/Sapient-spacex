@@ -40,7 +40,9 @@
 }
 .card-wrapper-title {
     margin-bottom: 0px;
-    padding: 5px 36px 20px;
+    margin:5px;
+    padding: 0px;
+    text-align: center;
     border-bottom: 2px solid #fff;
     background-color: transparent;
     color: #130b2c;
@@ -85,6 +87,12 @@
   } 
   }
 
+  .footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+  }
 //   @include breakpoint(dasktop) {
  
 //     .grid-sidebar-reversed {

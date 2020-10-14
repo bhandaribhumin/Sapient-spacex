@@ -68,6 +68,6 @@ header {
 @include between-breakpoints(900px,2184px) {
   .sticky {
     overflow: scroll;
-height: 100vh;
+    height: 100vh;
   }
 }
